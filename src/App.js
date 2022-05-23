@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Profile.css";
+import Profile from "./Profile";
+
+
+let users = [
+  { id: 1, name: "Andrew", about: "He likes to Fish", age: 'Age 35',},
+  { id: 2, name: "Kadie", about: "She likes to Swim", age: 'Age 30',},
+
+];
 
 function App() {
+  const renderUsers = () => {
+    return users.map((user) => {
+      return (
+        <Profile
+          key={user.id}
+          name={user.name}
+          about={user.about}
+          age={user.age}
+          Image={user.Image}
+        />
+      );
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display:'flex',alignItems:"center",flexDirection:"column"}}>
+      <h1>People Place</h1>
+      {renderUsers()}
+
     </div>
   );
 }
+
+
 
 export default App;

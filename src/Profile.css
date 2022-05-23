@@ -1,0 +1,50 @@
+html {
+  background-image:url(https://images.unsplash.com/photo-1548164806-9709e698bfc8?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=707) ;
+  justify-content:space-evenly;
+}
+
+body{
+  text-align: center;
+  
+}
+.container {
+  background-image: url(https://picfiles.alphacoders.com/258/258433.jpg);
+  background-position: center;
+  background-size: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  color: rgb(109, 241, 241);
+  
+  flex-wrap: wrap;
+  
+}
+.bio {
+  margin-left:10px;
+  align-items: center;
+}
+.user-name {
+  font-weight:bold;
+  color:steelblue;
+  align-items: center;
+}
+h1 {
+  background-color: #282c34;
+  height: 100p;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+/* p{
+  color:red;
+} */
